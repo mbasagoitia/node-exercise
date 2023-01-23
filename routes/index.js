@@ -1,4 +1,4 @@
-import express from "express";
+const express = require("express");
 // TODO: import router from users.route
 
 const router = express.Router();
@@ -9,4 +9,8 @@ router.get("/test", (req, res) => {
 
 // TODO: use the imported router to handle all routes matching "/users"
 
-export default router;
+const userRouter = require("./users.route.js");
+
+router.use("/users", userRouter);
+
+module.exports = router;
