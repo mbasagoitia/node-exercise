@@ -127,4 +127,4 @@ class MockDB {
 
 let db = new MockDB();
 
-export default db;
+module.exports = db;

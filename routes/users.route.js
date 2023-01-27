@@ -1,5 +1,5 @@
 const express = require("express");
-import db from "../mockdb";
+const db = require("../mockdb");
 
 const router = express.Router();
 
